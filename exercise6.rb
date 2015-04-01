@@ -24,10 +24,9 @@ puts "There are #{grocery_list.length} item in your grocery list."
 # 4. Check to see if your list includes "bananas". If it does, output "You need to pick up bananas". Otherwise, output "You don't need to pick up bananas today".
 
 
-grocery_list.include?("bananas")
-  if true
-    puts "You need to pick up bananas."
-  else
+if grocery_list.include?("bananas")
     puts "You don't need to pick up bananas today."
+  else
+    puts "You need to pick up bananas today."
 end
 
