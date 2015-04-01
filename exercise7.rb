@@ -39,3 +39,19 @@ puts "\nThe updated list with the deletion of cohort 2 is:"
 display_list(students)
 
 # 6. BONUS: Calculate the total amount of students in all cohorts by using each and incrementing a variable. Output the result.
+
+print "\nThe total number of students is:"
+print students.values.inject(0) {|a, b| a + b}
+
+#OR
+
+total_students = 0
+
+students.each_value do |value|
+  total_students += value
+end
+puts "\n\nThe total number of students is: #{total_students}."
+
+
+
+
